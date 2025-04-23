@@ -1,0 +1,3 @@
+interface Escudo{
+    void escudo();
+}
