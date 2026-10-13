@@ -1,0 +1,7 @@
+# Build output
+out/
+*.class
+
+# Editors
+.vscode/
+.idea/
