@@ -1,67 +1,28 @@
-# 🏰 MixEmpire - Beta 0.1
+# MixEmpire
 
-**MixEmpire** es una primera beta de un juego hecho en Java en el que controlas a un personaje dentro de una mazmorra representada mediante un array. Tu misión es sencilla (pero mortal): eliminar a todos los monstruos que encuentres.
+A turn-based dungeon crawler for the terminal, written in Java.
 
-Este proyecto es parte de un camino de aprendizaje en programación orientada a objetos y desarrollo de videojuegos en Java. Ideal para principiantes, y también para quienes buscan recordar cómo se siente programar por pasión y no por deadlines.
+> Learning project — written in 2025 while learning object-oriented programming in Java.
 
----
+## Overview
 
-## 🎮 Características
+You move a character through a dungeon drawn as an 11 × 25 grid in the console. Five monsters of different levels are placed at random; stepping onto one starts a fight in which you and the monster trade blows until one of you is defeated. The game ends when your character dies.
 
-- Juego por consola
-- Personaje jugable con sistema de movimiento
-- Mazmorra generada en forma de array
-- Monstruos enemigos básicos
-- Lógica simple pero funcional
-- Código comentado y estructurado
+The project practises classes, inheritance (a `Monstruo` base class with one subclass per level), collections and a simple game loop. The in-game text and the code comments are in Spanish.
 
----
+## Getting started
 
-## ⚙️ Requisitos
-
-- Un ordenador (sí, cualquier trasto moderno sirve)
-- Una terminal o IDE con soporte para **Java**
-- Java JDK 8 o superior instalado
-
----
-
-## 🚀 Instalación y uso
+Requires JDK 8 or later.
 
 ```bash
-# Clona el repositorio
-git clone https://github.com/tuusuario/MixEmpire.git
-cd MixEmpire
-
-# Compila los archivos .java
-javac Main.java
-
-# Ejecuta el juego
-java Main
+git clone https://github.com/AketzaBarajas/mix-empire.git
+cd mix-empire
+javac -encoding UTF-8 -d out src/*.java
+java -cp out Main
 ```
 
-> 💡 *Reemplaza `Main.java` por el nombre del archivo principal si es diferente.*
+Move with `W`, `A`, `S` and `D`, pressing Enter after each key.
 
----
+## License
 
-## 🧪 Ejemplo de ejecución
-
-```
-Bienvenido a MixEmpire
-Te encuentras en una mazmorra...
-[Jugador][ ][Monstruo]
-¿Qué quieres hacer?
-```
-
----
-
-## 📜 Licencia
-
-Este proyecto está bajo la licencia MIT. Siéntete libre de estudiar, modificar y compartir el código.
-
----
-
-## 💡 Nota del autor
-
-Este es un proyecto personal de práctica, así que si encuentras bugs... ¡pues claro que sí, campeón!  
-Pero si te mola y quieres aportar ideas, sugerencias o código: pull requests welcome 👾
-
+[MIT](LICENSE)
